@@ -16,6 +16,7 @@ export class UsernameComponent {
   }
 
   reset() {
-    this.userName = '';
+    this.userName = ''
+    this.emptyUserName = true;
   }
 }
