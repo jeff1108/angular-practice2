@@ -1,0 +1,12 @@
+<p>Type your username</p>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName"
+  (input)="checkempty()">
+<p>Username: {{ userName }}</p>
+<br>
+<button
+  class="btn btn-primary"
+  [disabled]="emptyUserName"
+  (click)="reset()">Add user</button>
